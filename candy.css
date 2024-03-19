@@ -1,0 +1,59 @@
+body {
+    background: url(background_game.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: lightblue;
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 50px;
+    height: 50px;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 999; /* Atur nilai z-index yang cukup tinggi */
+
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: blueviolet;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
