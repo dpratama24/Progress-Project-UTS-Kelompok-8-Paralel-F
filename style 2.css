@@ -1,0 +1,124 @@
+body {
+    background: url(background_game.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: lightblue;
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 50px;
+    height: 50px;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 999; /* Atur nilai z-index yang cukup tinggi */
+
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: blueviolet;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.waktu{
+    color: black; /* Warna teks */
+    /* border: 5px solid slategray;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: lightblue; */
+    width: 100px;
+    height: 40px;
+    background-color: lightblue;
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+    /* Menambahkan style teks */
+    font-family: 'Bangers', cursive;
+    font-size: 26px; /* Ukuran font */
+    font-weight: bold; /* Ketebalan font */
+    text-align: center; /* Posisi teks */
+}
+
+/* button{
+    width: 80px;
+    height: 40px;
+} */
+
+/* #musik{
+    margin: 12px;
+    background-size: 4px;
+    width: 5px;
+    height: 5px;
+} */
+
+.musik{
+    /* border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 4px #fff, 0 0 8px #8696FE;
+    background: transparent; */
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.musik img{
+    width: 35px;
+}
+
+
+/* .cara-main .teks-caraMain, .tentang-game .teks-tentangGame, .musik .teks-musik{
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+} */
+
+/* .cara-main:hover .teks-caraMain, .tentang-game:hover .teks-tentangGame, .musik:hover .teks-musik{
+    visibility: visible;
+} */
+
