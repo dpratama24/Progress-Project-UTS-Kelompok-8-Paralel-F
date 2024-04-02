@@ -204,14 +204,16 @@ function crushFood() {
 function crushThree() {
     //check rows
     for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < columns - 2; c++) {
+        for (let c = 0; c < columns - 3; c++) {
             let candy1 = board[r][c];
             let candy2 = board[r][c + 1];
             let candy3 = board[r][c + 2];
+            let candy4 = board[r][c + 3];
             if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes("blank")) {
                 candy1.src = "./blank.png";
                 candy2.src = "./blank.png";
                 candy3.src = "./blank.png";
+                candy4.src = "./blank.png";
                 score += 30;
             }
         }
@@ -219,14 +221,16 @@ function crushThree() {
 
     //check columns
     for (let c = 0; c < columns; c++) {
-        for (let r = 0; r < rows - 2; r++) {
+        for (let r = 0; r < rows - 3; r++) {
             let candy1 = board[r][c];
             let candy2 = board[r + 1][c];
             let candy3 = board[r + 2][c];
+            let candy4 = board[r + 3][c];
             if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes("blank")) {
                 candy1.src = "./blank.png";
                 candy2.src = "./blank.png";
                 candy3.src = "./blank.png";
+                candy4.src = "./blank.png";
                 score += 30;
             }
         }
@@ -236,10 +240,11 @@ function crushThree() {
 function checkValid() {
     //check rows
     for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < columns - 2; c++) {
+        for (let c = 0; c < columns - 3; c++) {
             let candy1 = board[r][c];
             let candy2 = board[r][c + 1];
             let candy3 = board[r][c + 2];
+            let candy4 = board[r][c + 3];
             if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes("blank")) {
                 return true;
             }
@@ -248,19 +253,19 @@ function checkValid() {
 
     //check columns
     for (let c = 0; c < columns; c++) {
-        for (let r = 0; r < rows - 2; r++) {
+        for (let r = 0; r < rows - 3; r++) {
             let candy1 = board[r][c];
             let candy2 = board[r + 1][c];
             let candy3 = board[r + 2][c];
+            let candy4 = board[r + 3][c];
             if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes("blank")) {
                 return true;
             }
         }
     }
 
-    return false;
+    return false;
 }
-
 
 function slideFood() {
     for (let c = 0; c < columns; c++) {

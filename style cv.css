@@ -1,0 +1,126 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    background: rgb(235, 237, 239);
+    background: linear-gradient(0deg, rgba(99,173,230,1) 0%, rgba(0,75,133,1) 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+
+nav {
+    background-color: #63ade6;
+    float: left;
+    width: 15%;
+    padding: 15px;
+    height: 835px;
+    font-size: 28px;
+}
+
+nav a {
+    margin: 15;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* CSS untuk kontainer kartu */
+.card-container {
+    display: flex; /* Mengatur elemen anak dalam satu baris */
+    justify-content: center; /* Pusatkan */
+    flex-wrap: wrap; /* Bungkus elemen ke baris berikutnya */
+    margin-top: 0px; /* Margin dari atas */
+  }
+  
+  /* CSS untuk kartu */
+  .card {
+    width: 325px; /* Lebar kartu */
+    border-radius: 12px; /* Sudut yang dibulatkan */
+    overflow: hidden; /* Sembunyikan konten yang melebihi */
+    box-shadow: 5px 6px 10px 0 #cfcece; /* Efek bayangan */
+    margin: 30px; /* Margin di sekitar kartu */
+    padding: 20px; /* Padding di dalam kartu */
+  }
+  
+  /* CSS untuk keadaan hover kartu */
+  .card:hover {
+    transform: scale(1.1); /* Efek perbesaran saat di-hover */
+    transition: 0.3s; /* Durasi efek transisi */
+  }
+  
+  /* CSS untuk gambar di dalam kartu */
+  .card img {
+    width: 100%; /* Membuat gambar mengisi lebar kartu */
+    height: auto; /* Pertahankan rasio aspek */
+  }
+  
+  /* CSS untuk konten di dalam kartu */
+  .card-content {
+    font-family: Arial, Helvetica, sans-serif; /* Keluarga font */
+    text-align: center; /* Pusatkan teks */
+    margin-top: 20px; /* Margin dari atas */
+    line-height: 20px; /* Tinggi baris */
+  }
+  
+  /* CSS untuk paragraf di dalam konten kartu */
+  .card-content p {
+    margin-top: 40px; /* Margin dari atas */
+    font-size: 16px; /* Ukuran font */
+    color: var(--texthead-color); /* Warna teks kustom */
+  }
+  
+  /* CSS untuk judul di dalam kontainer kartu */
+  .card-container h3 {
+    font-size: 24px; /* Ukuran font */
+    line-height: 30px; /* Tinggi baris */
+  }
+    .skills {
+    min-height: 100vh;
+  }
+  
+  .skills .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .skills .content .card {
+    width: 250px;
+    margin: 15px;
+  }
+  
+  .skills .content .img-card {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .skills .content .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1;
+    height: 1px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+  
+  .skills .content .img-card img:hover {
+    transform: scale(1.2);
+  }
